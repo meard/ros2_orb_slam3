@@ -1,5 +1,5 @@
 
-## New Features
+## New Additions
 Following new feaures were added to the existing repository
 
 - Added mono_gz_live.py to subscribe image transports from gazebo
@@ -7,7 +7,7 @@ Following new feaures were added to the existing repository
 - Can be modified to capture image from Live using usb cam or other streaming sources.
 
 ### Limitations
-**The new additions is tested and works with PX4-Autopilot Software-In-The-Loop Simulation. In theory, it should also work with other Gazebo simulations e.g. Turtlebot, Husky.**
+**The new additions are tested and works with PX4-Autopilot Software-In-The-Loop Simulation. In theory, it should also work with other Gazebo simulations e.g. Turtlebot, Husky.**
 
 ### Pre-requisites
 - PX4-Autopilot is installed and GZ sim is running ( command: make px4_sitl gz_x500_depth).
@@ -21,12 +21,10 @@ Step 1 : Go to PX4-Autopilot and initialize PX4 GZ simulalation. Visit [PX4-Auto
 Terminal 1
 ```
 cd PX4-Autopilot/
-
 make px4_sitl gz_x500_depth
-
 ```
 - **Note 1: Somehow gz_x500_depth is the only module that enables/supports image streaminig.** 
-- **Note 2: The above command will initialze gazebo sim with a px4 x500 drone model along with camera in an empty world. Its important to have some objects in the sim for step 4 to run, else error is thrown.**
+- **Note 2: The above command will initialze gazebo sim with a px4 x500 drone model along with camera in an empty world. Its important to have some objects in the sim for step 5 to run, else error is thrown.**
 
 Step 2 : Initialize connection to uXRCE-DDS client running on the simulator
 
@@ -48,7 +46,6 @@ Step 4 : Run **mono_node_cpp** to initialize ORB SLAM.
 Terminal 4
 ```
 ros2 run ros2_orb_slam3 mono_node_cpp --ros-args -p node_name_arg:=mono_slam_cpp
-
 ```
 
 Step 5:Run **mono_gazebo_live.py** to start image subscription from gazebo and parse it to ORB SLAM System 
