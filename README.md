@@ -2,7 +2,7 @@
 ## New Additions
 Following new feaures were added to the existing repository
 
-- Added mono_gz_live.py to subscribe image transports from gazebo
+- Added mono_gazebo_live.py to subscribe image transports from gazebo
 - Publish gazebo image to orb slam helper function
 - Can be modified to capture image from Live using usb cam or other streaming sources.
 
