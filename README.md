@@ -7,7 +7,7 @@ Following new feaures were added to the existing repository
 - Can be modified to capture image from Live using usb cam or other streaming sources.
 
 ### Limitations
-**The new additions are tested and works with PX4-Autopilot Software-In-The-Loop Simulation. In theory, it should also work with other Gazebo simulations e.g. Turtlebot, Husky.**
+**The new additions is tested and works with PX4-Autopilot Software-In-The-Loop Simulation. In theory, it should also work with other Gazebo simulations e.g. Turtlebot, Husky.**
 
 ### Pre-requisites
 - PX4-Autopilot is installed and GZ sim is running ( command: make px4_sitl gz_x500_depth).
@@ -54,6 +54,9 @@ Terminal 5 :
 ```
 ros2 run ros2_orb_slam3 mono_gazebo_live.py
 ```
+
+https://github.com/meard/prive_assets/assets/40901420/fe49f4f1-e56d-464c-9d63-5a0b6c557e65
+
 
 
 # Original Author's ReadME
