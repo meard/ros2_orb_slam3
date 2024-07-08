@@ -3,8 +3,8 @@
 <package format="3">
   <name>ros2_orb_slam3</name>
   <version>1.0.0</version>
-  <description>ROS2 implementation of ORB SLAM3 V1.0</description>
-  <maintainer email="azmyin12@gmail.com">tigerwife</maintainer>
+  <description>Python+ROS2 Implementation for Simulated Image Streaming using PX4 and Gazebo</description>
+  <maintainer email="hansda.mahdev2@gmail.com">meard</maintainer>
   <license>GPL 3.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
